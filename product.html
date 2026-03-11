@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Savage Path — Restless State</title>
+  <link rel="stylesheet" href="https://use.typekit.net/fvs3qhg.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="site-header">
+
+    <!-- Utility Bar -->
+    <div class="utility-bar">
+      <div class="utility-bar__inner">
+        <div class="utility-bar__social">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        </div>
+        <div class="utility-bar__ticker">
+          <div class="utility-bar__ticker-track">
+            <div class="utility-bar__ticker-item active">FREE U.S. SHIPPING ON ORDERS $75+</div>
+            <div class="utility-bar__ticker-item">PREMIUM QUALITY. HAND-PRINTED IN THE USA.</div>
+            <div class="utility-bar__ticker-item">JOIN THE MOVEMENT — @RESTLESSSTATE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="main-nav__inner">
+
+        <!-- Hamburger (mobile) -->
+        <button class="nav-hamburger" aria-label="Toggle mobile menu">
+          <span class="nav-hamburger__line"></span>
+          <span class="nav-hamburger__line"></span>
+          <span class="nav-hamburger__line"></span>
+        </button>
+
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo" aria-label="Restless State Home">RESTLESS <span>STATE</span></a>
+
+        <!-- Desktop Nav Links -->
+        <ul class="nav-links">
+          <li class="nav-links__item">
+            <a href="#" class="nav-links__link">New Arrivals</a>
+          </li>
+          <li class="nav-links__item">
+            <a href="collection.html" class="nav-links__link">Shop <span class="nav-links__arrow">▾</span></a>
+            <div class="mega-menu">
+              <div class="mega-menu__grid">
+                <div class="mega-menu__column">
+                  <h3>Categories</h3>
+                  <ul>
+                    <li><a href="collection.html">Graphic Tees</a></li>
+                    <li><a href="#">Hoodies</a></li>
+                    <li><a href="#">Headwear</a></li>
+                    <li><a href="#">Accessories</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu__column">
+                  <h3>Collections</h3>
+                  <ul>
+                    <li><a href="#">Deep Sea</a></li>
+                    <li><a href="#">Urban Myth</a></li>
+                    <li><a href="#">Blackout</a></li>
+                    <li><a href="#">Archive</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu__column">
+                  <h3>Featured</h3>
+                  <ul>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Limited Drops</a></li>
+                    <li><a href="#">Sale</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu__column">
+                  <div class="mega-menu__featured">
+                    <div class="placeholder-img" style="background: #333;">FEATURED COLLECTION</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-links__item">
+            <a href="#" class="nav-links__link">Lookbook</a>
+          </li>
+          <li class="nav-links__item">
+            <a href="#" class="nav-links__link">About</a>
+          </li>
+        </ul>
+
+        <!-- Nav Actions -->
+        <div class="nav-actions">
+          <button class="nav-action-btn" aria-label="Search">🔍</button>
+          <button class="nav-action-btn" aria-label="Account">👤</button>
+          <button class="nav-action-btn" data-cart-toggle aria-label="Cart">
+            🛒
+            <span class="nav-action-btn__badge">0</span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       MOBILE MENU
+       ============================================================ -->
+  <nav class="mobile-menu" aria-label="Mobile navigation">
+    <div class="mobile-menu__item">
+      <a href="#" class="mobile-menu__link">New Arrivals</a>
+    </div>
+    <div class="mobile-menu__item">
+      <a href="collection.html" class="mobile-menu__link">
+        Shop
+        <span class="mobile-menu__toggle" aria-label="Toggle Shop submenu">▾</span>
+      </a>
+      <div class="mobile-menu__submenu">
+        <a href="collection.html">Graphic Tees</a>
+        <a href="#">Hoodies</a>
+        <a href="#">Headwear</a>
+        <a href="#">Accessories</a>
+      </div>
+    </div>
+    <div class="mobile-menu__item">
+      <a href="#" class="mobile-menu__link">Lookbook</a>
+    </div>
+    <div class="mobile-menu__item">
+      <a href="#" class="mobile-menu__link">About</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       CART OVERLAY + DRAWER
+       ============================================================ -->
+  <div class="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" aria-label="Shopping cart">
+    <div class="cart-drawer__header">
+      <h2 class="cart-drawer__title">Your Cart</h2>
+      <button class="cart-drawer__close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-drawer__body">
+      <div class="cart-drawer__empty-icon">🛒</div>
+      <p class="cart-drawer__empty-text">Your cart is empty</p>
+      <a href="collection.html" class="btn btn--primary">Continue Shopping</a>
+    </div>
+    <div class="cart-drawer__footer"></div>
+  </aside>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main>
+
+    <!-- Product Detail -->
+    <section class="product-detail">
+      <div class="container">
+        <div class="product-detail__layout">
+
+          <!-- Left Column: Product Gallery -->
+          <div class="product-gallery">
+            <div class="product-gallery__main">
+              <img src="images/products/savage-path-back.png" alt="Back Design" class="product-gallery__main-img">
+            </div>
+            <div class="product-gallery__thumbs">
+              <button class="product-gallery__thumb active" data-label="Back Design" data-src="images/products/savage-path-back.png" aria-label="View back design image">
+                <img src="images/products/savage-path-back.png" alt="Back Design">
+              </button>
+              <button class="product-gallery__thumb" data-label="Front Logo" data-src="images/products/savage-path-front.png" aria-label="View front logo image">
+                <img src="images/products/savage-path-front.png" alt="Front Logo">
+              </button>
+              <button class="product-gallery__thumb" data-label="Model Back View" data-src="images/products/savage-path-model.png" aria-label="View model back image">
+                <img src="images/products/savage-path-model.png" alt="Model Back View">
+              </button>
+              <button class="product-gallery__thumb" data-label="Front & Back" data-src="images/products/savage-path-both.png" aria-label="View front and back image">
+                <img src="images/products/savage-path-both.png" alt="Front & Back">
+              </button>
+              <button class="product-gallery__thumb" data-label="Lifestyle" data-src="images/lifestyle/anvil-forge.png" aria-label="View lifestyle image">
+                <img src="images/lifestyle/anvil-forge.png" alt="Lifestyle">
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Column: Product Info -->
+          <div class="product-info">
+
+            <!-- Breadcrumb -->
+            <nav class="product-info__breadcrumb" aria-label="Breadcrumb">
+              <a href="index.html">Home</a>
+              <span>/</span>
+              <a href="collection.html">Graphic Tees</a>
+              <span>/</span>
+              <span>The Savage Path</span>
+            </nav>
+
+            <!-- Title & Price -->
+            <h1 class="product-info__title">The Savage Path</h1>
+            <div class="product-info__price">$34.95</div>
+            <div class="product-info__divider"></div>
+
+            <!-- Color Option -->
+            <div class="product-option">
+              <div class="product-option__label">Color — <strong>Black</strong></div>
+              <div class="product-option__colors">
+                <button class="product-color-swatch active" style="background-color: #000000;" aria-label="Black"></button>
+                <button class="product-color-swatch" style="background-color: #333333;" aria-label="Charcoal"></button>
+                <button class="product-color-swatch" style="background-color: #1a1a4e;" aria-label="Navy"></button>
+              </div>
+            </div>
+
+            <!-- Size Option -->
+            <div class="product-option">
+              <div class="product-option__label">Size</div>
+              <div class="product-option__sizes">
+                <button class="product-size-btn" aria-label="Size Small">S</button>
+                <button class="product-size-btn" aria-label="Size Medium">M</button>
+                <button class="product-size-btn active" aria-label="Size Large">L</button>
+                <button class="product-size-btn" aria-label="Size Extra Large">XL</button>
+                <button class="product-size-btn disabled" aria-label="Size 2X Large — Sold out" disabled>2XL</button>
+              </div>
+            </div>
+
+            <!-- Quantity Option -->
+            <div class="product-option">
+              <div class="product-option__label">Quantity</div>
+              <div class="product-quantity">
+                <button class="product-quantity__btn product-quantity__btn--minus" aria-label="Decrease quantity">&minus;</button>
+                <span class="product-quantity__value">1</span>
+                <button class="product-quantity__btn product-quantity__btn--plus" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="product-actions">
+              <button class="btn btn--primary btn--lg" aria-label="Add The Savage Path to cart">Add to Cart</button>
+            </div>
+
+            <!-- Accordion -->
+            <div class="product-accordion">
+
+              <!-- Description (active by default) -->
+              <div class="product-accordion__item active">
+                <button class="product-accordion__trigger" aria-expanded="true" aria-label="Toggle description">
+                  <span>Description</span>
+                  <span class="product-accordion__icon">&#9662;</span>
+                </button>
+                <div class="product-accordion__content" style="max-height: 500px;">
+                  <div class="product-accordion__content-inner">
+                    <p>The Savage Path tee features a hand-drawn wolf skull with crossed arrows — a symbol for those who walk the road less traveled. Screen-printed on premium heavyweight cotton.</p>
+                    <ul>
+                      <li>100% premium heavyweight cotton (6.1 oz)</li>
+                      <li>Screen-printed with water-based inks</li>
+                      <li>Pre-shrunk and garment-dyed</li>
+                      <li>Relaxed, modern fit</li>
+                      <li>Designed and printed in the USA</li>
+                    </ul>
+                    <p>BLEED. ENDURE. RISE. — This design belongs to The Savage Path collection. For those who refuse the easy road.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Size Guide -->
+              <div class="product-accordion__item">
+                <button class="product-accordion__trigger" aria-expanded="false" aria-label="Toggle size guide">
+                  <span>Size Guide</span>
+                  <span class="product-accordion__icon">&#9662;</span>
+                </button>
+                <div class="product-accordion__content" style="max-height: 0;">
+                  <div class="product-accordion__content-inner">
+                    <p>S: Chest 36-38" / M: Chest 38-40" / L: Chest 40-42" / XL: Chest 42-44" / 2XL: Chest 44-46"</p>
+                    <p>Model is 6'1", 185 lbs wearing size L</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Shipping & Returns -->
+              <div class="product-accordion__item">
+                <button class="product-accordion__trigger" aria-expanded="false" aria-label="Toggle shipping and returns">
+                  <span>Shipping &amp; Returns</span>
+                  <span class="product-accordion__icon">&#9662;</span>
+                </button>
+                <div class="product-accordion__content" style="max-height: 0;">
+                  <div class="product-accordion__content-inner">
+                    <p>Free standard shipping on U.S. orders over $75. Orders ship within 1-2 business days.</p>
+                    <p>30-day return policy. Items must be unworn with tags attached. We honor the code — if something's wrong, we make it right.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- end .product-accordion -->
+
+          </div>
+          <!-- end .product-info -->
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Column 1: Brand -->
+        <div class="footer__col">
+          <div class="footer__brand-logo"><img src="images/brand/logo-full.png" alt="Restless State"></div>
+          <p class="footer__about">Forged for those who refuse the script. Every thread carries intention. Independently owned, unapologetically bold.</p>
+        </div>
+
+        <!-- Column 2: Shop -->
+        <div class="footer__col">
+          <h4 class="footer__heading">Shop</h4>
+          <ul class="footer__links">
+            <li><a href="collection.html">Graphic Tees</a></li>
+            <li><a href="#">Hoodies</a></li>
+            <li><a href="#">Headwear</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Info -->
+        <div class="footer__col">
+          <h4 class="footer__heading">Info</h4>
+          <ul class="footer__links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Connect -->
+        <div class="footer__col">
+          <h4 class="footer__heading">Connect</h4>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+          <p class="footer__indie">Independent. Artist-owned. Always.</p>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p>&copy; 2026 Restless State. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

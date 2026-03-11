@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphic Tees — Restless State</title>
+  <link rel="stylesheet" href="https://use.typekit.net/fvs3qhg.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="site-header" role="banner">
+
+    <!-- Utility Bar -->
+    <div class="utility-bar">
+      <div class="utility-bar__inner">
+        <div class="utility-bar__social" aria-label="Social media links">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        </div>
+        <div class="utility-bar__ticker" aria-label="Announcements">
+          <div class="utility-bar__ticker-track">
+            <div class="utility-bar__ticker-item active">FREE U.S. SHIPPING ON ORDERS $75+</div>
+            <div class="utility-bar__ticker-item">PREMIUM QUALITY. HAND-PRINTED IN THE USA.</div>
+            <div class="utility-bar__ticker-item">JOIN THE MOVEMENT — @RESTLESSSTATE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="main-nav__inner">
+
+        <!-- Hamburger (mobile) -->
+        <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span class="nav-hamburger__line"></span>
+          <span class="nav-hamburger__line"></span>
+          <span class="nav-hamburger__line"></span>
+        </button>
+
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo" aria-label="Restless State home">RESTLESS <span>STATE</span></a>
+
+        <!-- Desktop Nav Links -->
+        <ul class="nav-links">
+          <li class="nav-links__item">
+            <a href="#" class="nav-links__link">New Arrivals</a>
+          </li>
+          <li class="nav-links__item">
+            <a href="collection.html" class="nav-links__link active">Shop <span class="nav-links__arrow">▾</span></a>
+            <div class="mega-menu" aria-label="Shop submenu">
+              <div class="mega-menu__grid">
+                <div class="mega-menu__column">
+                  <h3>Categories</h3>
+                  <ul>
+                    <li><a href="collection.html">Graphic Tees</a></li>
+                    <li><a href="#">Long Sleeves</a></li>
+                    <li><a href="#">Hoodies</a></li>
+                    <li><a href="#">Tanks</a></li>
+                    <li><a href="#">Hats</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu__column">
+                  <h3>Collections</h3>
+                  <ul>
+                    <li><a href="#">Warrior Collection</a></li>
+                    <li><a href="#">Memento Mori</a></li>
+                    <li><a href="#">Rise Up</a></li>
+                    <li><a href="#">Essentials</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu__column">
+                  <h3>Featured</h3>
+                  <ul>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">New Drops</a></li>
+                    <li><a href="#">Limited Edition</a></li>
+                    <li><a href="#">Sale</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu__column">
+                  <div class="mega-menu__featured">
+                    <img src="images/products/savage-path-back.png" alt="Featured: The Savage Path graphic tee" style="width:100%; height:200px; object-fit:cover;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-links__item">
+            <a href="#" class="nav-links__link">Collections <span class="nav-links__arrow">▾</span></a>
+          </li>
+          <li class="nav-links__item">
+            <a href="#" class="nav-links__link">About</a>
+          </li>
+        </ul>
+
+        <!-- Nav Actions -->
+        <div class="nav-actions">
+          <button class="nav-action-btn" aria-label="Search">🔍</button>
+          <button class="nav-action-btn" aria-label="Account">👤</button>
+          <button class="nav-action-btn" data-cart-toggle aria-label="Cart">
+            🛒
+            <span class="nav-action-btn__badge">0</span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       MOBILE MENU
+       ============================================================ -->
+  <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <ul>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link">New Arrivals</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="collection.html" class="mobile-menu__link">
+          Shop
+          <button class="mobile-menu__toggle" aria-label="Toggle Shop submenu">▾</button>
+        </a>
+        <ul class="mobile-menu__submenu">
+          <li><a href="collection.html">Graphic Tees</a></li>
+          <li><a href="#">Long Sleeves</a></li>
+          <li><a href="#">Hoodies</a></li>
+          <li><a href="#">Tanks</a></li>
+          <li><a href="#">Hats</a></li>
+        </ul>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link">
+          Collections
+          <button class="mobile-menu__toggle" aria-label="Toggle Collections submenu">▾</button>
+        </a>
+        <ul class="mobile-menu__submenu">
+          <li><a href="#">Warrior Collection</a></li>
+          <li><a href="#">Memento Mori</a></li>
+          <li><a href="#">Rise Up</a></li>
+          <li><a href="#">Essentials</a></li>
+        </ul>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link">About</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ============================================================
+       CART OVERLAY + DRAWER
+       ============================================================ -->
+  <div class="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" role="dialog" aria-label="Shopping cart">
+    <div class="cart-drawer__header">
+      <h2 class="cart-drawer__title">Your Cart</h2>
+      <button class="cart-drawer__close" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-drawer__body">
+      <div class="cart-drawer__empty-icon">🛒</div>
+      <p class="cart-drawer__empty-text">Your cart is empty</p>
+      <a href="collection.html" class="btn btn--primary btn--sm">Continue Shopping</a>
+    </div>
+    <div class="cart-drawer__footer"></div>
+  </aside>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main id="main-content">
+
+    <!-- Page Banner -->
+    <section class="page-banner" aria-label="Page heading">
+      <h1 class="page-banner__title">Graphic Tees</h1>
+      <nav class="page-banner__breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> / <a href="collection.html">Shop</a> / <span>Graphic Tees</span>
+      </nav>
+    </section>
+
+    <!-- Collection Layout -->
+    <div class="collection-layout container">
+
+      <!-- Sidebar Filters -->
+      <aside class="collection-sidebar" aria-label="Product filters">
+
+        <!-- Size Filter -->
+        <div class="filter-group">
+          <h3 class="filter-group__title">
+            Size
+            <span class="filter-group__title-arrow">▾</span>
+          </h3>
+          <div class="filter-group__options">
+            <div class="filter-option" role="checkbox" aria-checked="false" tabindex="0">
+              <span class="filter-option__checkbox"></span>
+              S
+            </div>
+            <div class="filter-option" role="checkbox" aria-checked="false" tabindex="0">
+              <span class="filter-option__checkbox"></span>
+              M
+            </div>
+            <div class="filter-option" role="checkbox" aria-checked="false" tabindex="0">
+              <span class="filter-option__checkbox"></span>
+              L
+            </div>
+            <div class="filter-option" role="checkbox" aria-checked="false" tabindex="0">
+              <span class="filter-option__checkbox"></span>
+              XL
+            </div>
+            <div class="filter-option" role="checkbox" aria-checked="false" tabindex="0">
+              <span class="filter-option__checkbox"></span>
+              2XL
+            </div>
+          </div>
+        </div>
+
+        <!-- Price Filter -->
+        <div class="filter-group">
+          <h3 class="filter-group__title">
+            Price
+            <span class="filter-group__title-arrow">▾</span>
+          </h3>
+          <div class="filter-group__options">
+            <div class="filter-option" role="checkbox" aria-checked="false" tabindex="0">
+              <span class="filter-option__checkbox"></span>
+              Under $35
+            </div>
+            <div class="filter-option" role="checkbox" aria-checked="false" tabindex="0">
+              <span class="filter-option__checkbox"></span>
+              $35 - $45
+            </div>
+            <div class="filter-option" role="checkbox" aria-checked="false" tabindex="0">
+              <span class="filter-option__checkbox"></span>
+              $45 - $55
+            </div>
+            <div class="filter-option" role="checkbox" aria-checked="false" tabindex="0">
+              <span class="filter-option__checkbox"></span>
+              Over $55
+            </div>
+          </div>
+        </div>
+
+        <!-- Color Filter -->
+        <div class="filter-group">
+          <h3 class="filter-group__title">
+            Color
+            <span class="filter-group__title-arrow">▾</span>
+          </h3>
+          <div class="filter-colors" role="group" aria-label="Color filter options">
+            <button class="filter-color-swatch" style="background:#000000;" aria-label="Black" title="Black"></button>
+            <button class="filter-color-swatch" style="background:#FFFFFF;" aria-label="White" title="White"></button>
+            <button class="filter-color-swatch" style="background:#333333;" aria-label="Charcoal" title="Charcoal"></button>
+            <button class="filter-color-swatch" style="background:#1a1a4e;" aria-label="Navy" title="Navy"></button>
+            <button class="filter-color-swatch" style="background:#D4451A;" aria-label="Orange" title="Orange"></button>
+            <button class="filter-color-swatch" style="background:#4a4a4a;" aria-label="Gray" title="Gray"></button>
+          </div>
+        </div>
+
+      </aside>
+
+      <!-- Main Content Area -->
+      <div>
+
+        <!-- Mobile Filter Toggle -->
+        <button class="filter-toggle-btn" aria-label="Toggle filters" aria-expanded="false">☰ Show Filters</button>
+
+        <!-- Toolbar -->
+        <div class="collection-toolbar">
+          <span class="collection-toolbar__count">12 Products</span>
+          <div class="collection-toolbar__sort">
+            <label for="sort-select">Sort by:</label>
+            <select id="sort-select">
+              <option value="featured" selected>Featured</option>
+              <option value="best-selling">Best Selling</option>
+              <option value="price-low-high">Price: Low to High</option>
+              <option value="price-high-low">Price: High to Low</option>
+              <option value="newest">Newest</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="collection-grid">
+
+          <!-- Product 1: THE SAVAGE PATH -->
+          <a href="product.html" class="product-card" aria-label="The Savage Path - $34.95">
+            <div class="product-card__image-wrap">
+              <img src="images/products/savage-path-back.png" alt="The Savage Path graphic tee — back design" class="product-card__image product-card__image--primary">
+              <img src="images/products/savage-path-front.png" alt="The Savage Path graphic tee — front design" class="product-card__image product-card__image--hover">
+              <span class="product-card__badge">Best Seller</span>
+              <button class="product-card__quick-add" aria-label="Quick add The Savage Path to cart">Quick Add</button>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">The Savage Path</h3>
+              <p class="product-card__price">$34.95</p>
+              <div class="product-card__swatches">
+                <span class="product-card__swatch" style="background:#000;"></span>
+                <span class="product-card__swatch" style="background:#333;"></span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product 2: FORTUNE FAVORS THE BOLD -->
+          <a href="product.html" class="product-card" aria-label="Fortune Favors The Bold - $34.95">
+            <div class="product-card__image-wrap">
+              <img src="images/products/fortune-favors-back.png" alt="Fortune Favors The Bold graphic tee — back design" class="product-card__image product-card__image--primary">
+              <img src="images/products/fortune-favors-front.png" alt="Fortune Favors The Bold graphic tee — front design" class="product-card__image product-card__image--hover">
+              <span class="product-card__badge">Best Seller</span>
+              <button class="product-card__quick-add" aria-label="Quick add Fortune Favors The Bold to cart">Quick Add</button>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Fortune Favors The Bold</h3>
+              <p class="product-card__price">$34.95</p>
+              <div class="product-card__swatches">
+                <span class="product-card__swatch" style="background:#000;"></span>
+                <span class="product-card__swatch" style="background:#4a5568;"></span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product 3: NEVER LOOK BACK -->
+          <a href="product.html" class="product-card" aria-label="Never Look Back - $32.95">
+            <div class="product-card__image-wrap">
+              <img src="images/products/never-look-back-back.png" alt="Never Look Back graphic tee — back design" class="product-card__image product-card__image--primary">
+              <img src="images/products/never-look-back-front.png" alt="Never Look Back graphic tee — front design" class="product-card__image product-card__image--hover">
+              <button class="product-card__quick-add" aria-label="Quick add Never Look Back to cart">Quick Add</button>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Never Look Back</h3>
+              <p class="product-card__price">$32.95</p>
+              <div class="product-card__swatches">
+                <span class="product-card__swatch" style="background:#fff; border:1px solid #ccc;"></span>
+                <span class="product-card__swatch" style="background:#000;"></span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product 4: STAY RESTLESS -->
+          <a href="product.html" class="product-card" aria-label="Stay Restless - $34.95">
+            <div class="product-card__image-wrap">
+              <img src="images/products/kraken-back.png" alt="Stay Restless graphic tee — back design" class="product-card__image product-card__image--primary">
+              <img src="images/products/kraken-front.png" alt="Stay Restless graphic tee — front design" class="product-card__image product-card__image--hover">
+              <span class="product-card__badge">New</span>
+              <button class="product-card__quick-add" aria-label="Quick add Stay Restless to cart">Quick Add</button>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Stay Restless</h3>
+              <p class="product-card__price">$34.95</p>
+              <div class="product-card__swatches">
+                <span class="product-card__swatch" style="background:#000;"></span>
+                <span class="product-card__swatch" style="background:#2dd4a8;"></span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product 5: MADE FOR MORE -->
+          <a href="product.html" class="product-card" aria-label="Made For More - $34.95">
+            <div class="product-card__image-wrap">
+              <img src="images/products/made-for-more-back.png" alt="Made For More graphic tee — back design" class="product-card__image product-card__image--primary">
+              <img src="images/products/made-for-more-front.png" alt="Made For More graphic tee — front design" class="product-card__image product-card__image--hover">
+              <button class="product-card__quick-add" aria-label="Quick add Made For More to cart">Quick Add</button>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Made For More</h3>
+              <p class="product-card__price">$34.95</p>
+              <div class="product-card__swatches">
+                <span class="product-card__swatch" style="background:#000;"></span>
+                <span class="product-card__swatch" style="background:#444;"></span>
+                <span class="product-card__swatch" style="background:#fff; border:1px solid #ccc;"></span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product 6: RS ESSENTIALS HOODIE -->
+          <a href="product.html" class="product-card" aria-label="RS Essentials Hoodie - $54.95">
+            <div class="product-card__image-wrap">
+              <img src="images/products/hoodie-front.png" alt="RS Essentials Hoodie — front view" class="product-card__image product-card__image--primary">
+              <img src="images/products/hoodie-moody.png" alt="RS Essentials Hoodie — moody studio shot" class="product-card__image product-card__image--hover">
+              <button class="product-card__quick-add" aria-label="Quick add RS Essentials Hoodie to cart">Quick Add</button>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">RS Essentials Hoodie</h3>
+              <p class="product-card__price">$54.95</p>
+              <div class="product-card__swatches">
+                <span class="product-card__swatch" style="background:#000;"></span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product 7: THE SAVAGE PATH — MODEL -->
+          <a href="product.html" class="product-card" aria-label="The Savage Path Model - $34.95">
+            <div class="product-card__image-wrap">
+              <img src="images/products/savage-path-model.png" alt="The Savage Path graphic tee — worn by model" class="product-card__image product-card__image--primary">
+              <img src="images/products/savage-path-back.png" alt="The Savage Path graphic tee — back design" class="product-card__image product-card__image--hover">
+              <span class="product-card__badge">New</span>
+              <button class="product-card__quick-add" aria-label="Quick add The Savage Path to cart">Quick Add</button>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">The Savage Path — Model</h3>
+              <p class="product-card__price">$34.95</p>
+              <div class="product-card__swatches">
+                <span class="product-card__swatch" style="background:#000;"></span>
+                <span class="product-card__swatch" style="background:#333;"></span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product 8: FORTUNE FAVORS — SLATE -->
+          <a href="product.html" class="product-card" aria-label="Fortune Favors Slate - $34.95">
+            <div class="product-card__image-wrap">
+              <img src="images/products/fortune-favors-model.png" alt="Fortune Favors The Bold graphic tee — worn by model in slate" class="product-card__image product-card__image--primary">
+              <img src="images/products/fortune-favors-back.png" alt="Fortune Favors The Bold graphic tee — back design" class="product-card__image product-card__image--hover">
+              <button class="product-card__quick-add" aria-label="Quick add Fortune Favors Slate to cart">Quick Add</button>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Fortune Favors — Slate</h3>
+              <p class="product-card__price">$34.95</p>
+              <div class="product-card__swatches">
+                <span class="product-card__swatch" style="background:#000;"></span>
+                <span class="product-card__swatch" style="background:#4a5568;"></span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product 9: NEVER LOOK BACK — WHITE -->
+          <a href="product.html" class="product-card" aria-label="Never Look Back White - $32.95">
+            <div class="product-card__image-wrap">
+              <img src="images/products/never-look-back-model.png" alt="Never Look Back graphic tee — worn by model in white" class="product-card__image product-card__image--primary">
+              <img src="images/products/never-look-back-back.png" alt="Never Look Back graphic tee — back design" class="product-card__image product-card__image--hover">
+              <span class="product-card__badge">New</span>
+              <button class="product-card__quick-add" aria-label="Quick add Never Look Back White to cart">Quick Add</button>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Never Look Back — White</h3>
+              <p class="product-card__price">$32.95</p>
+              <div class="product-card__swatches">
+                <span class="product-card__swatch" style="background:#fff; border:1px solid #ccc;"></span>
+                <span class="product-card__swatch" style="background:#000;"></span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product 10: RS ESSENTIALS HOODIE — COUPLES -->
+          <a href="product.html" class="product-card" aria-label="RS Essentials Hoodie Couples - $54.95">
+            <div class="product-card__image-wrap">
+              <img src="images/products/hoodie-couple.png" alt="RS Essentials Hoodie — couple wearing hoodies" class="product-card__image product-card__image--primary">
+              <img src="images/products/hoodie-front.png" alt="RS Essentials Hoodie — front view" class="product-card__image product-card__image--hover">
+              <button class="product-card__quick-add" aria-label="Quick add RS Essentials Hoodie Couples to cart">Quick Add</button>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">RS Essentials Hoodie — Couples</h3>
+              <p class="product-card__price">$54.95</p>
+              <div class="product-card__swatches">
+                <span class="product-card__swatch" style="background:#000;"></span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product 11: MADE FOR MORE — COAL -->
+          <a href="product.html" class="product-card" aria-label="Made For More Coal - $34.95">
+            <div class="product-card__image-wrap">
+              <img src="images/products/made-for-more-coal-back.png" alt="Made For More graphic tee in coal — back design" class="product-card__image product-card__image--primary">
+              <img src="images/products/made-for-more-coal-front.png" alt="Made For More graphic tee in coal — front design" class="product-card__image product-card__image--hover">
+              <button class="product-card__quick-add" aria-label="Quick add Made For More Coal to cart">Quick Add</button>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Made For More — Coal</h3>
+              <p class="product-card__price">$34.95</p>
+              <div class="product-card__swatches">
+                <span class="product-card__swatch" style="background:#000;"></span>
+                <span class="product-card__swatch" style="background:#444;"></span>
+                <span class="product-card__swatch" style="background:#fff; border:1px solid #ccc;"></span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product 12: STAY RESTLESS — DOCK -->
+          <a href="product.html" class="product-card" aria-label="Stay Restless Dock - $34.95">
+            <div class="product-card__image-wrap">
+              <img src="images/products/kraken-model.png" alt="Stay Restless graphic tee — model on dock" class="product-card__image product-card__image--primary">
+              <img src="images/products/kraken-back.png" alt="Stay Restless graphic tee — back design" class="product-card__image product-card__image--hover">
+              <button class="product-card__quick-add" aria-label="Quick add Stay Restless Dock to cart">Quick Add</button>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Stay Restless — Dock</h3>
+              <p class="product-card__price">$34.95</p>
+              <div class="product-card__swatches">
+                <span class="product-card__swatch" style="background:#000;"></span>
+                <span class="product-card__swatch" style="background:#2dd4a8;"></span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Pagination -->
+        <nav class="pagination" aria-label="Pagination">
+          <button class="pagination__btn pagination__btn--arrow" aria-label="Previous page">&larr;</button>
+          <button class="pagination__btn active" aria-label="Page 1" aria-current="page">1</button>
+          <button class="pagination__btn" aria-label="Page 2">2</button>
+          <button class="pagination__btn" aria-label="Page 3">3</button>
+          <button class="pagination__btn" aria-label="Page 4">4</button>
+          <button class="pagination__btn pagination__btn--arrow" aria-label="Next page">&rarr;</button>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Brand Column -->
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="images/brand/logo-full.png" alt="Restless State">
+          </div>
+          <p class="footer__about">Forged for those who refuse the script. Every thread carries intention. Independently owned, unapologetically bold.</p>
+          <div class="footer__social" aria-label="Social media">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+          <p class="footer__indie">Independent &amp; Artist-Owned</p>
+        </div>
+
+        <!-- Shop Column -->
+        <div>
+          <h4 class="footer__heading">Shop</h4>
+          <ul class="footer__links">
+            <li><a href="collection.html">Graphic Tees</a></li>
+            <li><a href="#">Long Sleeves</a></li>
+            <li><a href="#">Hoodies</a></li>
+            <li><a href="#">Tanks</a></li>
+            <li><a href="#">Hats</a></li>
+            <li><a href="#">All Products</a></li>
+          </ul>
+        </div>
+
+        <!-- Help Column -->
+        <div>
+          <h4 class="footer__heading">Help</h4>
+          <ul class="footer__links">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns &amp; Exchanges</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Size Guide</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Column -->
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Wholesale</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p>&copy; 2026 Restless State. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
