@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Savage Path — Restless State</title>
+  <link rel="icon" type="image/png" href="images/brand/favicon.png">
   <link rel="stylesheet" href="https://use.typekit.net/fvs3qhg.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,14 +25,12 @@
         <div class="utility-bar__social">
           <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
           <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
         </div>
         <div class="utility-bar__ticker">
           <div class="utility-bar__ticker-track">
-            <div class="utility-bar__ticker-item active">FREE U.S. SHIPPING ON ORDERS $75+</div>
-            <div class="utility-bar__ticker-item">PREMIUM QUALITY. HAND-PRINTED IN THE USA.</div>
-            <div class="utility-bar__ticker-item">JOIN THE MOVEMENT — @RESTLESSSTATE</div>
+            <span class="utility-bar__ticker-item active">FREE U.S. SHIPPING ON ORDERS $75+</span>
+            <span class="utility-bar__ticker-item">PREMIUM QUALITY. HAND-PRINTED IN THE USA.</span>
+            <span class="utility-bar__ticker-item">JOIN THE MOVEMENT — @RESTLESSSTATE</span>
           </div>
         </div>
       </div>
@@ -41,79 +40,127 @@
     <nav class="main-nav" aria-label="Main navigation">
       <div class="main-nav__inner">
 
-        <!-- Hamburger (mobile) -->
-        <button class="nav-hamburger" aria-label="Toggle mobile menu">
+        <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
           <span class="nav-hamburger__line"></span>
           <span class="nav-hamburger__line"></span>
           <span class="nav-hamburger__line"></span>
         </button>
 
-        <!-- Logo -->
-        <a href="index.html" class="nav-logo" aria-label="Restless State Home">RESTLESS <span>STATE</span></a>
+        <a href="index.html" class="nav-logo" aria-label="Restless State home">RESTLESS <span>STATE</span></a>
 
-        <!-- Desktop Nav Links -->
         <ul class="nav-links">
           <li class="nav-links__item">
             <a href="#" class="nav-links__link">New Arrivals</a>
           </li>
           <li class="nav-links__item">
-            <a href="collection.html" class="nav-links__link">Shop <span class="nav-links__arrow">▾</span></a>
+            <a href="#" class="nav-links__link">Shop <span class="nav-links__arrow">&#9662;</span></a>
             <div class="mega-menu">
               <div class="mega-menu__grid">
                 <div class="mega-menu__column">
-                  <h3>Categories</h3>
-                  <ul>
-                    <li><a href="collection.html">Graphic Tees</a></li>
-                    <li><a href="#">Hoodies</a></li>
-                    <li><a href="#">Headwear</a></li>
-                    <li><a href="#">Accessories</a></li>
-                  </ul>
+                  <h4>Tops</h4>
+                  <a href="#">Graphic Tees</a>
+                  <a href="#">Long Sleeves</a>
+                  <a href="#">Tank Tops</a>
                 </div>
                 <div class="mega-menu__column">
-                  <h3>Collections</h3>
-                  <ul>
-                    <li><a href="#">Deep Sea</a></li>
-                    <li><a href="#">Urban Myth</a></li>
-                    <li><a href="#">Blackout</a></li>
-                    <li><a href="#">Archive</a></li>
-                  </ul>
+                  <h4>Outerwear</h4>
+                  <a href="#">Hoodies</a>
+                  <a href="#">Zip-Ups</a>
+                  <a href="#">Jackets</a>
                 </div>
                 <div class="mega-menu__column">
-                  <h3>Featured</h3>
-                  <ul>
-                    <li><a href="#">Best Sellers</a></li>
-                    <li><a href="#">Limited Drops</a></li>
-                    <li><a href="#">Sale</a></li>
-                  </ul>
+                  <h4>Accessories</h4>
+                  <a href="#">Hats</a>
+                  <a href="#">Beanies</a>
+                  <a href="#">Stickers</a>
                 </div>
                 <div class="mega-menu__column">
-                  <div class="mega-menu__featured">
-                    <div class="placeholder-img" style="background: #333;">FEATURED COLLECTION</div>
-                  </div>
+                  <h4>Featured</h4>
+                  <a href="#">Best Sellers</a>
+                  <a href="#">Limited Drops</a>
+                  <a href="#">Gift Cards</a>
                 </div>
               </div>
             </div>
           </li>
           <li class="nav-links__item">
-            <a href="#" class="nav-links__link">Lookbook</a>
+            <a href="#" class="nav-links__link">Collections <span class="nav-links__arrow">&#9662;</span></a>
+            <div class="mega-menu">
+              <div class="mega-menu__grid">
+                <div class="mega-menu__column">
+                  <a href="#">Graphic Tees</a>
+                  <a href="#">Hoodies</a>
+                  <a href="#">Hats</a>
+                </div>
+                <div class="mega-menu__column">
+                  <a href="#">New Arrivals</a>
+                  <a href="#">Best Sellers</a>
+                  <a href="#">Limited Drops</a>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="nav-links__item">
             <a href="#" class="nav-links__link">About</a>
           </li>
+          <li class="nav-links__item">
+            <a href="#" class="nav-links__link">Contact</a>
+          </li>
         </ul>
 
-        <!-- Nav Actions -->
         <div class="nav-actions">
-          <button class="nav-action-btn" aria-label="Search">🔍</button>
-          <button class="nav-action-btn" aria-label="Account">👤</button>
-          <button class="nav-action-btn" data-cart-toggle aria-label="Cart">
-            🛒
+          <button class="nav-action-btn" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+          <button class="nav-action-btn" aria-label="Account">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </button>
+          <button class="nav-action-btn" aria-label="Cart" data-cart-toggle>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
             <span class="nav-action-btn__badge">0</span>
           </button>
         </div>
 
       </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" aria-label="Mobile navigation">
+      <div class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link">New Arrivals</a>
+      </div>
+      <div class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link">Shop</a>
+        <button class="mobile-menu__toggle" aria-label="Expand Shop submenu">&#9662;</button>
+        <div class="mobile-menu__submenu">
+          <a href="#">Graphic Tees</a>
+          <a href="#">Long Sleeves</a>
+          <a href="#">Hoodies</a>
+          <a href="#">Zip-Ups</a>
+          <a href="#">Hats</a>
+          <a href="#">Beanies</a>
+        </div>
+      </div>
+      <div class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link">Collections</a>
+        <button class="mobile-menu__toggle" aria-label="Expand Collections submenu">&#9662;</button>
+        <div class="mobile-menu__submenu">
+          <a href="#">Graphic Tees</a>
+          <a href="#">Hoodies</a>
+          <a href="#">Hats</a>
+          <a href="#">New Arrivals</a>
+          <a href="#">Best Sellers</a>
+          <a href="#">Limited Drops</a>
+        </div>
+      </div>
+      <div class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link">About</a>
+      </div>
+      <div class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link">Contact</a>
+      </div>
+    </div>
+
   </header>
 
   <!-- ============================================================
@@ -319,60 +366,73 @@
     <div class="container">
       <div class="footer__grid">
 
-        <!-- Column 1: Brand -->
-        <div class="footer__col">
-          <div class="footer__brand-logo"><img src="images/brand/logo-full.png" alt="Restless State"></div>
+        <div class="footer__column">
+          <a href="index.html" class="footer__brand-logo"><img src="images/brand/logo-full.svg" alt="Restless State"></a>
           <p class="footer__about">Forged for those who refuse the script. Every thread carries intention. Independently owned, unapologetically bold.</p>
         </div>
 
-        <!-- Column 2: Shop -->
-        <div class="footer__col">
+        <div class="footer__column">
           <h4 class="footer__heading">Shop</h4>
           <ul class="footer__links">
-            <li><a href="collection.html">Graphic Tees</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Graphic Tees</a></li>
             <li><a href="#">Hoodies</a></li>
-            <li><a href="#">Headwear</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Sale</a></li>
+            <li><a href="#">Hats</a></li>
+            <li><a href="#">Limited Drops</a></li>
+            <li><a href="#">Gift Cards</a></li>
           </ul>
         </div>
 
-        <!-- Column 3: Info -->
-        <div class="footer__col">
-          <h4 class="footer__heading">Info</h4>
+        <div class="footer__column">
+          <h4 class="footer__heading">Support</h4>
           <ul class="footer__links">
-            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping &amp; Returns</a></li>
             <li><a href="#">Size Guide</a></li>
-            <li><a href="#">Shipping</a></li>
-            <li><a href="#">Returns</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Order Tracking</a></li>
           </ul>
         </div>
 
-        <!-- Column 4: Connect -->
-        <div class="footer__col">
+        <div class="footer__column">
           <h4 class="footer__heading">Connect</h4>
           <div class="footer__social">
             <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
             <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
           </div>
-          <p class="footer__indie">Independent. Artist-owned. Always.</p>
+          <p class="footer__indie">Independently owned. Unapologetically bold. Made for those who stay restless.</p>
         </div>
 
       </div>
 
-      <!-- Footer Bottom -->
       <div class="footer__bottom">
-        <p>&copy; 2026 Restless State. All rights reserved.</p>
+        <p>&copy; 2026 Restless State LLC &middot; Restless State&reg; is a registered trademark</p>
         <div class="footer__legal">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- Cart Drawer -->
+  <div class="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" aria-label="Shopping cart">
+    <div class="cart-drawer__header">
+      <h2 class="cart-drawer__title">Your Cart</h2>
+      <button class="cart-drawer__close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-drawer__body">
+      <div class="cart-drawer__empty-icon">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      </div>
+      <p class="cart-drawer__empty-text">Your cart is empty</p>
+      <a href="#" class="btn">Start Shopping</a>
+    </div>
+    <div class="cart-drawer__footer"></div>
+  </aside>
 
   <script src="js/main.js"></script>
 </body>
