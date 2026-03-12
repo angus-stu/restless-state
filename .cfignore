@@ -1,4 +1,7 @@
-.fastembed_cache
-.claude
-.serena
+.fastembed_cache/
+.claude/
+.serena/
 .DS_Store
+node_modules/
+.git/
+.wrangler/
